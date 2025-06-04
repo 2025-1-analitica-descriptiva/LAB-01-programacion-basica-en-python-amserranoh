@@ -3,8 +3,14 @@ Escriba el codigo que ejecute la accion solicitada en cada pregunta. Los
 datos requeridos se encuentran en el archivo data.csv. En este laboratorio
 solo puede utilizar las funciones y librerias basicas de python. No puede
 utilizar pandas, numpy o scipy.
+
 """
 
+from homework.leer_datos import load_input
+from homework.pregunta_02 import extraer_columna
+from homework.pregunta_02 import mapper
+from homework.pregunta_02 import shuffle
+from homework.pregunta_02 import reducer
 
 def pregunta_04():
     """
@@ -26,3 +32,15 @@ def pregunta_04():
      ('12', 3)]
 
     """
+    sequence = load_input ("files\input")
+    sequence = extraer_columna(sequence,2)
+    sequence = [mes.split("-")[1] for mes in sequence]
+    sequence = mapper(sequence)
+    sequence = shuffle(sequence)
+    sequence = reducer(sequence)
+    print(sequence)
+    return(sequence)
+
+
+if __name__ == "__main__":
+    pregunta_04()

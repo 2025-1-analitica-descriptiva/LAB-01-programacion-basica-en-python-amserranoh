@@ -4,7 +4,10 @@ datos requeridos se encuentran en el archivo data.csv. En este laboratorio
 solo puede utilizar las funciones y librerias basicas de python. No puede
 utilizar pandas, numpy o scipy.
 """
-
+from homework.leer_datos import load_input
+from homework.pregunta_03 import extraer_tupla
+from homework.pregunta_05 import agrupar
+from homework.pregunta_07 import resumen
 
 def pregunta_08():
     """
@@ -27,3 +30,14 @@ def pregunta_08():
      (9, ['A', 'B', 'C', 'E'])]
 
     """
+    sequence = load_input("files\input")
+    sequence = extraer_tupla(sequence,[1,0])
+    sequence= agrupar(sequence)
+    sequence = resumen(sequence,"pregunta8")
+
+    print((sequence))
+    return(sequence)
+
+
+if __name__ == "__main__":
+    pregunta_08()
