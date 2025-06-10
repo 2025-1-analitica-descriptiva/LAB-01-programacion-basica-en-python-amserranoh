@@ -35,7 +35,7 @@ def combinaciones (sequence):
     resultado = []
     for x,y in sequence:
         for x in x.split(","):
-            resultado.append((x, y))
+            resultado.append((x, int(y)))
     return resultado
 
 if __name__ == "__main__":
