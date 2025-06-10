@@ -20,7 +20,7 @@ def pregunta_12():
     {'A': 177, 'B': 187, 'C': 114, 'D': 136, 'E': 324}
 
     """
-    sequence = load_input ("files\input")
+    sequence = load_input ("files/input")
     sequence = extraer_tupla(sequence,[0,4])
     sequence = limpieza (sequence)
     sequence = shuffle(sequence)

@@ -21,7 +21,7 @@ def pregunta_10():
 
 
     """
-    sequence = load_input ("files\input")
+    sequence = load_input ("files/input")
     sequence = cantidad_elemetos(sequence)
     
     print(sequence)

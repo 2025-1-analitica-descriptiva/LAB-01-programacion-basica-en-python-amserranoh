@@ -29,7 +29,7 @@ def pregunta_09():
      'jjj': 18}}
 
     """
-    sequence = load_input ("files\input")
+    sequence = load_input ("files/input")
     sequence = extraer_columna(sequence,4)
     sequence = [linea.strip() for linea in sequence] 
     sequence = [linea.split(",") for linea in sequence]

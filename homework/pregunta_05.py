@@ -7,7 +7,6 @@ utilizar pandas, numpy o scipy.
 from homework.leer_datos import load_input
 from homework.pregunta_03 import extraer_tupla
 
-
 def pregunta_05():
     """
     Retorne una lista de tuplas con el valor maximo y minimo de la columna 2

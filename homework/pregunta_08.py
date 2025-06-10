@@ -30,7 +30,7 @@ def pregunta_08():
      (9, ['A', 'B', 'C', 'E'])]
 
     """
-    sequence = load_input("files\input")
+    sequence = load_input("files/input")
     sequence = extraer_tupla(sequence,[1,0])
     sequence= agrupar(sequence)
     sequence = resumen(sequence,"pregunta8")

@@ -8,6 +8,7 @@ from homework.leer_datos import load_input
 from homework.pregunta_02 import extraer_columna
 from homework.pregunta_05 import agrupar 
 from homework.pregunta_05 import max_min_para_x
+
 def pregunta_06():
     """
     La columna 5 codifica un diccionario donde cada cadena de tres letras
@@ -28,7 +29,7 @@ def pregunta_06():
      ('jjj', 5, 17)]
 
     """
-    sequence = load_input ("files\input")
+    sequence = load_input ("files/input")
     sequence = extraer_columna(sequence,4)
     sequence = [linea.strip() for linea in sequence] # Asegura que no haya saltos de línea
     sequence = [linea.split(",") for linea in sequence]

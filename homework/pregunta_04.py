@@ -32,7 +32,7 @@ def pregunta_04():
      ('12', 3)]
 
     """
-    sequence = load_input ("files\input")
+    sequence = load_input ("files/input")
     sequence = extraer_columna(sequence,2)
     sequence = [mes.split("-")[1] for mes in sequence]
     sequence = mapper(sequence)

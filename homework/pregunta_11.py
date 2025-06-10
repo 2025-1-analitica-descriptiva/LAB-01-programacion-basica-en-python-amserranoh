@@ -21,7 +21,7 @@ def pregunta_11():
 
 
     """
-    sequence = load_input ("files\input")
+    sequence = load_input ("files/input")
     sequence = extraer_tupla(sequence,[3,1])
     sequence = combinaciones (sequence)
     sequence = shuffle(sequence)
